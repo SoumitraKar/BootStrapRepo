@@ -1,0 +1,299 @@
+body{
+  font-family: 'Ubuntu', sans-serif;
+}
+.well{
+  background-color: #EAFBF7;
+}
+h2 small{
+  margin-left: 10px;
+  color: #16A085;
+}
+h2{
+  font-weight: bolder;
+}
+
+/* --------------------------------------
+   Social Media
+   -------------------------------------- */
+
+   .circle{
+   	border-radius: 50%;
+   	margin-left: 20px;
+   	font-size: 26px;
+    	color: #EAFBF7;
+   	}
+    .circle:hover{
+      text-decoration: none;
+    	font-size: 26px;
+     	color: #2BCDAD;
+    	}
+
+
+/* --------------------------------------
+   Typography
+   -------------------------------------- */
+
+
+
+/* --------------------------------------
+   Navbar
+   -------------------------------------- */
+   .navbar-form .form-control{
+     width: 200px;
+   }
+   .navbar{
+     background-color: #2BCDAD;
+   }
+   .navbar-brand {
+     padding: 0 0;
+   }
+   .active {
+     background-color: #28BEA0;
+   }
+
+   .navbar-nav>.active>a, .navbar-nav>.active>a:hover {
+       background-color: #28BEA0;
+       /* background-color: #d5d5d5; */
+   }
+   .btn-primary {
+     background-color: #159C81;
+     border-color: #159C81;
+   }
+   .btn-primary:hover {
+     background-color: #25534A;
+     border-color: #25534A;
+   }
+
+   /* --------------------------------------
+      modal
+      -------------------------------------- */
+.alert{
+  margin-top: 10px;
+  display: none;
+  margin-bottom: -10px;
+}
+.modal-body p{
+  padding: 5px;
+}
+.modal-body var{
+  margin-right: 10px;
+}
+.modal-footer button{
+  width: 32%;
+}
+/* --------------------------------------
+   Carousel
+   -------------------------------------- */
+#myCarousel{
+ font-weight: bolder;
+ margin-top: 50px;
+}
+#myCarousel .btn-primary{
+  width: 100%;
+}
+#myCarousel h2{
+  font-weight: normal;
+  color: white;
+}
+#myCarousel .item{
+  height: 400px;
+}
+
+#myCarousel p{
+  font-size: 10px;
+  text-shadow: 0px 0px;
+  font-weight: lighter;
+}
+#slide1{
+  background: url('../images/HeroElementMedium.jpg') top center no-repeat;
+  background-size: 100% auto;
+}
+#slide2{
+  background: url('../images/person-street-dark-bike.jpg') top center no-repeat;
+  background-size: 100% auto;
+    opacity: 1;
+}
+#slide2 .span{
+  opacity: 1;
+}
+
+#myCarousel .span{
+  color: #25534A;
+  background-color: #EAFBF7;
+  width: 400px;
+  margin: auto;
+  padding: 5px;
+  border-radius: 5px;
+}
+#myCarousel .span input{
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #2BCDAD;
+  margin-bottom: 5px;
+}
+#myCarousel input{
+  font-weight: lighter;
+  font-size: 13px;
+  width: 300px;
+  height: 40px;
+  border: 0px;
+  padding-left: 5px;
+}
+#myCarousel .submitBtn{
+  width: 100px;
+  font-size: 13px;
+  height: 40px;
+  margin-left: -10px;
+  color: #FFFFFF;
+  background-color: #2BCDAD;
+  border-color: #2BCDAD;
+}
+
+/*--------------------------------------
+latestupdt
+--------------------------------------*/
+.latestupdt p{
+  font-weight: bold;
+  padding: 5px 10px;
+}
+.latestupdt .panel{
+  padding: 0 0 ;
+}
+.latestupdt a{
+  font-weight: lighter;
+  margin: 5px;
+}
+/*--------------------------------------
+bigCallout
+--------------------------------------*/
+#bigCallout{
+  margin: 20px 0px;
+}
+#bigCallout .btn{
+  width: 100%;
+}
+#bigCallout .well{
+  width: 100%;
+}
+#bigCallout .col-sm-10, #bigCallout .col-md-10{
+  margin-bottom: 20px;
+}
+
+#bigCallout .col-10{
+  width: 900px;
+  margin: auto;
+}
+#bigCallout li{
+  margin-top: 7px;
+}
+.well .page-header{
+  margin-top: 0px;
+}
+.well .page-header h3{
+  margin-top: 0px;
+}
+/* --------------------------------------
+   UpComing Bikes
+   -------------------------------------- */
+#UpComingBikes{
+  text-align: center;
+}
+
+#UpComingBikes img{
+  margin-bottom: 10px;
+}
+#UpComingBikes .panel-heading{
+  background-color: #EAFBF7;
+}
+
+/* --------------------------------------
+   footer
+   -------------------------------------- */
+footer{
+  background-color: #1f4732;
+  color: #EEEEEE;
+}
+
+footer a{
+  color: black;
+}
+footer li{
+  list-style: none;
+}
+
+/* --------------------------------------
+   Media Queries
+   -------------------------------------- */
+
+/* Portrait & landscape phone */
+@media (max-width: 480px) {
+  .modal-footer button{
+    width: 30%;
+    font-size: 8px;
+  }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+  #myCarousel .span{
+    color: #25534A;
+    background-color: #EAFBF7;
+    width: auto;
+    margin: auto;
+    padding: 5px;
+  }
+  #myCarousel .carousel-caption{
+    margin-top: 1px;
+  }
+  #myCarousel input{
+    width: 50%;
+    height: 35px;
+  }
+  #myCarousel .submitBtn{
+    width: 70px;
+    height: 35px;
+  }
+  #myCarousel h1{
+    font-size: 25px;
+  }
+  #myCarousel h3{
+    font-size: 20px;
+  }
+  #myCarousel .item{
+    height: 330px;
+  }
+  #slide1{
+    background: url('../images/HeroElementSmall.jpg') top center no-repeat;
+    background-size: 768px auto;
+  }
+  #slide2{
+    background: url('../images/person-street-dark-bike.jpg') top center no-repeat;
+    background-size: 768px auto;
+  }
+  #bigCallout img{
+    width: 100%;
+  }
+  #bigCallout .well{
+    width: 100%;
+  }
+}
+
+/* Large desktop */
+@media (min-width: 1220px) {
+
+  #bigCallout img{
+    margin-top: 50px;
+    width: 40%;
+  }
+  #myCarousel .item{
+    height: 500px;
+  }
+  #slide1{
+    background: url('../images/HeroElementLarge.jpg') top center no-repeat;
+    background-size: 100% auto;
+  }
+
+  #bigCallout .well{
+    width: 60%;
+  }
+}

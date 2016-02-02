@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+
+		<!-- Website Title & Description for Search Engine purposes -->
+		<title>BikeLelo.com</title>
+		<meta name="description" content="">
+
+		<!-- Font Awesome -->
+		<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css" rel="stylesheet">
+
+		<!-- Mobile viewport optimized -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+
+		<!-- Bootstrap CSS -->
+		<link href="css/lib/bootstrap.min.css" rel="stylesheet">
+		<link href="css/lib/bootstrap-glyphicons.css" rel="stylesheet">
+
+		<!-- Font CSS -->
+		<link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+	  <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+
+		<!-- Custom CSS -->
+		<link href="css/styles.css" rel="stylesheet">
+
+		<!-- Include Modernizr in the head, before any other Javascript -->
+		<script src="js/modernizr-2.6.2.min.js"></script>
+
+	</head>
+	<body>
+
+	<div class="container" id="main">
+		<div class="navbar navbar-fixed-top">
+			<button class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse" type="button">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<div class="container">
+				<a class="navbar-brand" href="#">
+					<img src="images/logo.png" class="logo" width=180px;>
+				</a>
+				<div class="nav-collapse collapse navbar-responsive-collapse  pull-right">
+					<ul class="nav navbar-nav">
+						<li class="active">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+								Info Blog
+								<strong class="caret"> </strong> <!-- Drop down button-->
+							</a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="index.html">Info Blog</a>
+								</li>
+								<li>
+									<a href="#">Lasest Release</a>
+								</li>
+								<li>
+									<a href="#">Upcoming bike</a>
+								</li>
+								<li class="divider"></li><!-- Devider line-->
+
+								<li class="dropdown-header">Released Bikes</li><!-- dropdown sub-menu heading-->
+								<li>
+									<a href="#">Check on road Price</a>
+								</li>
+								<li>
+									<a href="#">Compare bikes</a>
+								</li>
+								<li>
+									<a href="#">Service and Retail</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">News Feed</a>
+						</li>
+					</ul>
+					<form class="navbar-form pull-right">
+						<input type="text" class="form-control" placeholder="Search...">
+						<button type="submit" class="btn btn-primary">
+							<span class="glyphicon glyphicon-search"></span>
+						</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!-- Navbar ends-->
+
+
+				<div id="myCarousel">
+					<!-- Wrapper for slides -->
+					<div class="carousel-inner">
+						<div class="item active" id="slide2">
+							<div class="carousel-caption span">
+								<span>
+									<h1>On-road price</h1>
+									<form action="" method="get">
+										<input type="text" placeholder="Search bike make and model" class="textbox">
+										<input type="text" placeholder="Search in city" class="textbox">
+										<a href="#Modal" role="button" class="btn btn-primary" data-toggle="modal">Search</a>
+										<p>It's private, no need to share your number and email</p>
+									</form>
+								</span>
+							</div><!-- end carousel-caption-->
+						</div><!-- end item -->
+					</div>
+				</div>
+				<!-- end carousel-->
+
+				<!-- Start Alert-->
+				<div class="alert alert-success alert-block fade in" id="successAlert">
+					<button type="button" class="close" id="closeAlert">&times;</button>
+					<h4>Submitted successfully</h4>
+					<p>Vendor will be contacting you soon. Be paitent</p>
+				</div>
+				<!-- end Alert-->
+
+				<!-- Start Modal Window-->
+				<div class="modal fade" id="Modal">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+								<h4 class="modal-title">On-roade Price</h4>
+							</div>
+							<div class="modal-body">
+								<p>
+									Interested in the bike? leave your contact info for Vendor to contact you
+								</p>
+								<form class="form-horizontal">
+								  <div class="form-group">
+								    <label for="inputEmail" class="col-sm-2 control-label">Email</label>
+								    <div class="col-sm-10">
+								      <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+								    </div>
+								  </div>
+								  <div class="form-group">
+								    <label for="inputName" class="col-sm-2 control-label">Full Name</label>
+								    <div class="col-sm-10">
+								      <input type="text" class="form-control" id="inputName" placeholder="Full Name">
+								    </div>
+								  </div>
+									<div class="form-group">
+								    <label for="inputPhoneNum" class="col-sm-2 control-label">Contact</label>
+								    <div class="col-sm-10">
+								      <input type="number" class="form-control" id="inputPhoneNum" placeholder="Phone number">
+								    </div>
+								  </div>
+								  <div class="form-group">
+								    <div class="col-sm-offset-2 col-sm-10">
+								      <div class="checkbox">
+								        <label>
+													<p>
+														Allow vendor to contact you by<br>
+													</p>
+								          <input type="radio" name="contact"> <var>Call and Mail</var>
+													<input type="radio" name="contact" checked="checked"> Mail only
+								        </label>
+								      </div>
+								    </div>
+								  </div>
+								</form>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								<button type="button" class="btn btn-primary" data-dismiss="modal" id="showAlert">Submit</button>
+								<button type="button" class="btn btn-warning" data-dismiss="modal">Proceed anyways</button>
+							</div>
+						</div>
+					</div>
+				</div><!-- End Modal-->
+
+
+				<!--UpComing Bike Swxtion End-->
+
+		<div class="row" id="latestupdtsH">
+			<div class="col-12">
+				<h2>Latest Updates</h2>
+			</div>
+		</div>
+
+		<div class="row" id="latestupdt">
+			<div class="col-sm-4 latestupdt">
+				<div class="panel">
+					<img src="images/Honda-Activa.jpg" alt="" width=100%/>
+					<p>
+	          5 things to look out for in the Royal Enfield Himalayan
+	        </p>
+	        <button type="button" class="btn btn-link">Read More</button>
+				</div>
+			</div>
+			<div class="col-sm-4 latestupdt">
+				<div class="panel">
+					<img src="images/YamahaprojectINDRA.jpg" alt="" width=100%/>
+					<p>
+	          5 things to look out for in the Royal Enfield Himalayan
+	        </p>
+	        <button type="button" class="btn btn-link">Read More</button>
+				</div>
+			</div>
+			<div class="col-sm-4 latestupdt">
+				<div class="panel">
+					<img src="images/Triumph-India.jpg" alt="" width=100%/>
+					<p>
+	          5 things to look out for in the Royal Enfield Himalayan
+	        </p>
+	        <button type="button" class="btn btn-link">Read More</button>
+				</div>
+			</div>
+						<div class="col-sm-4 latestupdt">
+							<div class="panel">
+								<img src="images/Royal-Enfield-Himalayan-Action.jpg" alt="" width=100%/>
+								<p>
+				          5 things to look out for in the Royal Enfield Himalayan
+				        </p>
+				        <button type="button" class="btn btn-link">Read More</button>
+							</div>
+						</div>
+						<div class="col-sm-4 latestupdt">
+							<div class="panel">
+								<img src="images/TVS-Apache-RTR-200-4V.jpg" alt="" width=100%/>
+								<p>
+				          5 things to look out for in the Royal Enfield Himalayan
+				        </p>
+				        <button type="button" class="btn btn-link">Read More</button>
+							</div>
+						</div>
+						<div class="col-sm-4 latestupdt">
+							<div class="panel">
+								<img src="images/RoyalEnfieldHimalayan.jpg" alt="" width=100%/>
+								<p>
+				          5 things to look out for in the Royal Enfield Himalayan
+				        </p>
+				        <button type="button" class="btn btn-link">Read More</button>
+							</div>
+		</div>
+
+		<!--UpComing Bike Swxtion End-->
+
+		<div class="row" id="moreInfo">
+
+		</div>
+
+		<div class="row" id="moreCourses">
+
+		</div>
+</div>
+	</div><!-- End of container class-->
+
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-2">
+				<h6>Copyright &copy; 2016 Soumitra</h6>
+				</div><!-- end col-sm-2 -->
+
+				<div class="col-sm-4">
+					<h6>Contact Me</h6>
+					<ul>
+						<li>Soumitra Kar</li>
+						<li>9008434668</li>
+					</ul>
+				</div><!-- end col-sm-4 -->
+
+				<div class="col-sm-4 pull-right">
+					<h6>Follow Us</h6>
+					<a href="#" class="fa fa-twitter circle"></a>
+					<a href="#"  class="fa fa-facebook circle"></a>
+					<a href="#"  class="fa fa-google-plus circle"></a>
+					<a href="#"  class="fa fa-dribbble circle"></a>
+					<a href="#"  class="fa fa-pinterest circle"></a>
+					<a href="#"  class="fa fa-youtube circle"></a>
+				</div><!-- end col-sm-2 -->
+
+			</div><!-- end row -->
+		</div><!-- end container -->
+	</footer>
+
+			<!-- All Javascript at the bottom of the page for faster page loading -->
+
+			<!-- First try for the online version of jQuery-->
+			<script src="http://code.jquery.com/jquery.js"></script>
+
+			<!-- If no online access, fallback to our hardcoded version of jQuery -->
+			<script>window.jQuery || document.write('<script src="js/lib/jquery-1.8.2.min.js"><\/script>')</script>
+
+			<!-- Bootstrap JS -->
+			<script src="js/lib/bootstrap.min.js"></script>
+
+			<!-- Custom JS -->
+			<script src="js/script.js"></script>
+
+	</body>
+</html>
